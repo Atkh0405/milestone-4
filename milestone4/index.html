@@ -1,0 +1,58 @@
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Resume Builder</title>
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <main>
+        <h1>Editable Resume By Atif Ullah Khan</h1>
+        <form id="resumeForm">
+          <section>
+            <h2>Personal Information</h2>
+            <label for="resumeUrl">Resume URL: </label>
+            <input type="text" id="resumeUrl" name="resumeUrl" required placeholder="Enter your Resume URL" />
+            <br />
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required placeholder="Enter your Name" />
+            <br />
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required placeholder="Enter your Email" />
+            <br />
+            <label for="phone">Phone: </label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" />
+            <br />
+            <label for="adress">Adress</label>
+            <input type="adress" id="phone" name="phone" required placeholder="Enter your Adress" />
+            <br />
+            <label for="profilePicture">Profile Picture: </label>
+            <input type="file" id="profilePicture" name="" accept="image/*" required />
+          </section>
+          <section>
+            <h2>Education</h2>
+            <label for="education">Education</label>
+            <textarea id="education" name="education" rows="4" required placeholder="Enter your education details"></textarea>
+            <br>
+          </section>
+          <section>
+            <h2>Experience</h2>
+            <label for="experience">Experience</label>
+            <textarea id="experience" name="experience" rows="4" required placeholder="Enter your experience details"></textarea>
+            <br />
+          </section>
+          <section>
+            <h2>Skills</h2>
+            <label for="skills">Skills</label>
+            <textarea id="skills" name="skills" rows="4" required placeholder="Enter your skills"></textarea>
+            <br />
+          </section>
+          <button>Generate Resume Below</button>
+        </form>
+        <div id="resumeOutput">
+          <!-- Resume will be generated here -->
+        </div>
+      </main>
+      <script src="script.js"></script>
+    </body>
+  </html>
